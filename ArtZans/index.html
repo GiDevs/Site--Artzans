@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Artzans • Moda Urbana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Bangers&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="javascript.js"></script>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="logo1.png" alt="Artzans logo">
+      <div>
+        <div class="name">ARTZANS</div>
+        <div style="font-size:12px;color:var(--muted)">Moda | Acessórios | Arte Urbana</div>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#home">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <div class="hero">
+        <div class="left">
+          <p class="lead">Peças com expressão própria — grafites e cores vibrantes. A Artzans é moda que fala alto: estampas únicas, acessórios artesanais e uma pegada 100% original.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#produtos">Ver Produtos</a>
+            <a class="btn ghost" href="#sobre">Nossa História</a>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="mock">
+            <div style="text-align:center">
+              <p style="font-weight:700;margin:0 0 6px">Preview das peças</p>
+              <p class="placeholder">Mockup / Lookbook (adicione imagens reais aqui)</p>
+            </div>
+          </div>
+          <div style="display:flex;gap:12px">
+            <div class="mock" style="flex:1">Banner promocional</div>
+            <div class="mock" style="flex:1">Novidades</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:28px">
+        <h2 style="margin:0 0 8px;font-family:'Permanent Marker';color:var(--accent)">Lançamentos</h2>
+        <div class="products-grid">
+          <div class="card">
+            <div>
+              <div class="tag">Boné</div>
+              <div class="title">Cap</div>
+            </div>
+            <div class="placeholder">Em breve</div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="tag">Ecobag</div>
+              <div class="title">Eco Bag</div>
+            </div>
+            <div class="placeholder">Em breve</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="produtos">
+      <h2 style="font-family:'Permanent Marker';color:var(--accent)">Produtos</h2>
+      <p style="color:var(--muted)">Página dedicada aos produtos. Aqui você pode conectar seu catálogo (WooCommerce, Shopify, ou JSON/API) — por enquanto está vazia.</p>
+
+      <div class="products-grid" style="margin-top:18px">
+        <!-- Exemplos vazios / placeholders -->
+        <div class="card"><div class="placeholder">Sem produtos cadastrados</div></div>
+        <div class="card"><div class="placeholder">Sem produtos cadastrados</div></div>
+        <div class="card"><div class="placeholder">Sem produtos cadastrados</div></div>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <h2 style="font-family:'Permanent Marker';color:var(--accent)">Sobre Nós</h2>
+      <div class="about-grid">
+        <div class="mission">
+          <h3>Nossa missão</h3>
+          <p style="color:var(--muted)">INSERIR MISSÃO AQUI</p>
+          <p style="margin-top:12px">Valorizamos materiais de qualidade e impacto social.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2 style="font-family:'Permanent Marker';color:var(--accent)">Contato</h2>
+      <div style="display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:12px">
+        <div>
+          <form onsubmit="event.preventDefault();alert('Formulário de contato (demo)');">
+            <input type="text" placeholder="Nome*" required>
+            <input type="email" placeholder="Email*" required>
+            <input type="text" placeholder="Assunto">
+            <textarea placeholder="Mensagem*" required></textarea>
+            <button class="btn primary" style="width:160px">Enviar</button>
+          </form>
+        </div>
+        <div>
+          <div class="contact-info">
+            <h4 style="margin:0 0 8px">Fale com a gente</h4>
+            <p style="margin:0;color:var(--muted)">Email: contato@artzans.com<br>Telefone: (11) XXXXX-XXXX<br>Endereço: Rua Tal e tal, 123 — São Paulo</p>
+            <div style="margin-top:12px;display:flex;gap:10px">
+              <div class="btn ghost">Instagram</div>
+              <div class="btn ghost">TikTok</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;gap:12px;align-items:center">
+        <img src="logo1.png" alt="logo" style="width:46px;height:46px;border-radius:8px">
+        <div style="color:var(--muted);font-size:13px">© Artzans</div>
+      </div>
+    </footer>
+
+  </main>
+
+  <div class="spray"></div>
+
+</body>
+</html>

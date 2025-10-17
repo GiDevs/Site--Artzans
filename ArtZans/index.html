@@ -1,136 +1,123 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Artzans • Moda Urbana</title>
-  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Bangers&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script type="module" src="javascript.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - Acessórios de Natureza</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Oi&display=swap" rel="stylesheet">
+    <script src="javascript.js" defer></script> 
+
 </head>
 <body>
-  <header>
-    <div class="brand">
-      <img src="logo1.png" alt="Artzans logo">
-      <div>
-        <div class="name">ARTZANS</div>
-        <div style="font-size:12px;color:var(--muted)">Moda | Acessórios | Arte Urbana</div>
-      </div>
+    <header class="hero-section" id="home"> 
+   
+    <div class="header-top"> 
+        <div class="logo">ArtZans</div></a> 
+
+        <nav class="nav-bar">
+            <a href="#sobre-nos" class="nav-item">sobre</a> 
+            <a href="#livro-colecoes" class="nav-item">criações</a> 
+        </nav>
     </div>
+    
+    <div class="grass-container">
+        <span class="grass-text grass-1">|||</span>
+        <span class="grass-text grass-2">|||</span>
+        <span class="grass-text grass-3">|||</span>
+        <span class="grass-text grass-4">|||</span>
+        <span class="grass-text grass-5">|||</span>
+        <span class="grass-text grass-6">|||</span>
+        <span class="grass-text grass-7">|||</span>
+        <span class="grass-text grass-8">|||</span>
+        <span class="grass-text grass-9">|||</span>
+        <span class="grass-text grass-10">|||</span>
+        <span class="grass-text grass-11">|||</span>
+    </div>
+    
+    <img src="assets/Abelha.png" alt="Abelha grande no canto" class="bee bee-1">
+    <img src="assets/Abelha.png" alt="Abelha pequena no centro" class="bee bee-2">
+    <img src="assets/Abelha.png" alt="Abelha pequena no topo" class="bee bee-3">
+    <img src="assets/Abelha.png" alt="Abelha grande no canto inferior" class="bee bee-4">
+    <img src="assets/Abelha.png" alt="Abelha pequena no canto superior" class="bee bee-5">
 
-    <nav>
-      <a href="#home">Início</a>
-      <a href="#produtos">Produtos</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
-
-  <main>
-    <section id="home">
-      <div class="hero">
-        <div class="left">
-          <p class="lead">Peças com expressão própria — grafites e cores vibrantes. A Artzans é moda que fala alto: estampas únicas, acessórios artesanais e uma pegada 100% original.</p>
-          <div class="cta-row">
-            <a class="btn primary" href="#produtos">Ver Produtos</a>
-            <a class="btn ghost" href="#sobre">Nossa História</a>
-          </div>
+    <div class="hero-content">
+        <h1>Acessórios feitos a mão</h1>
+        <p>Para você que pensa em natureza</p>
+    </div>
+</header>
+    
+    <section class="about-section" id="sobre-nos"> 
+        <div class="about-content-box">
+            <h2 id="Titulo">sobre nós</h2>
+            <p>Artzans é uma marca especializada em acessórios que unem estilo, qualidade e personalidade!
+            Nosso propósito é oferecer peças que complementam o visual e valorizam a identidade de cada cliente, sempre com atenção aos detalhes e às tendências do momento. Trabalhamos com materiais selecionados e design diferenciado, buscando transformar cada acessório em um toque especial para o dia a dia.
+            </p>
         </div>
-
-        <div class="right">
-          <div class="mock">
-            <div style="text-align:center">
-              <p style="font-weight:700;margin:0 0 6px">Preview das peças</p>
-              <p class="placeholder">Mockup / Lookbook (adicione imagens reais aqui)</p>
-            </div>
-          </div>
-          <div style="display:flex;gap:12px">
-            <div class="mock" style="flex:1">Banner promocional</div>
-            <div class="mock" style="flex:1">Novidades</div>
-          </div>
-        </div>
-      </div>
-
-      <div style="margin-top:28px">
-        <h2 style="margin:0 0 8px;font-family:'Permanent Marker';color:var(--accent)">Lançamentos</h2>
-        <div class="products-grid">
-          <div class="card">
-            <div>
-              <div class="tag">Boné</div>
-              <div class="title">Cap</div>
-            </div>
-            <div class="placeholder">Em breve</div>
-          </div>
-          <div class="card">
-            <div>
-              <div class="tag">Ecobag</div>
-              <div class="title">Eco Bag</div>
-            </div>
-            <div class="placeholder">Em breve</div>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <section id="produtos">
-      <h2 style="font-family:'Permanent Marker';color:var(--accent)">Produtos</h2>
-      <p style="color:var(--muted)">Página dedicada aos produtos. Aqui você pode conectar seu catálogo (WooCommerce, Shopify, ou JSON/API) — por enquanto está vazia.</p>
-
-      <div class="products-grid" style="margin-top:18px">
-        <!-- Exemplos vazios / placeholders -->
-        <div class="card"><div class="placeholder">Sem produtos cadastrados</div></div>
-        <div class="card"><div class="placeholder">Sem produtos cadastrados</div></div>
-        <div class="card"><div class="placeholder">Sem produtos cadastrados</div></div>
-      </div>
-    </section>
-
-    <section id="sobre">
-      <h2 style="font-family:'Permanent Marker';color:var(--accent)">Sobre Nós</h2>
-      <div class="about-grid">
-        <div class="mission">
-          <h3>Nossa missão</h3>
-          <p style="color:var(--muted)">INSERIR MISSÃO AQUI</p>
-          <p style="margin-top:12px">Valorizamos materiais de qualidade e impacto social.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contato">
-      <h2 style="font-family:'Permanent Marker';color:var(--accent)">Contato</h2>
-      <div style="display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:12px">
-        <div>
-          <form onsubmit="event.preventDefault();alert('Formulário de contato (demo)');">
-            <input type="text" placeholder="Nome*" required>
-            <input type="email" placeholder="Email*" required>
-            <input type="text" placeholder="Assunto">
-            <textarea placeholder="Mensagem*" required></textarea>
-            <button class="btn primary" style="width:160px">Enviar</button>
-          </form>
-        </div>
-        <div>
-          <div class="contact-info">
-            <h4 style="margin:0 0 8px">Fale com a gente</h4>
-            <p style="margin:0;color:var(--muted)">Email: contato@artzans.com<br>Telefone: (11) XXXXX-XXXX<br>Endereço: Rua Tal e tal, 123 — São Paulo</p>
-            <div style="margin-top:12px;display:flex;gap:10px">
-              <div class="btn ghost">Instagram</div>
-              <div class="btn ghost">TikTok</div>
+    <section class="products-section">
+        <div class="product-box">
+            <div class="col-red"></div>
+            <div class="col-blue-light"></div>
+            
+            <div class="book-container">
+                <div class="book" id="livro-colecoes"> 
+                    <div class="page cover-page book-page">
+                        <h3>Livro de Coleções</h3>
+                        <span class="next-page-arrow" id="nextArrow">→</span>
+                    </div>
+                    <div class="page spring-page book-page">
+                        <h3>Primavera</h3>
+                    </div>
+                    <div class="page end-page book-page">
+                        <h3>Fim do Livro</h3>
+                    </div>
+                </div>
             </div>
-          </div>
+
+            <div class="col-green-light"></div>
+            <div class="col-red-2"></div>
         </div>
-      </div>
+    </section>
+    
+    <section class="hive-section">
+        <h2>Nossa Colmeia</h2>
+        <div class="hive-graphics">
+     <img src="assets/Colmeia.png" alt="Colmeia pendurada" class="hive-image">
+        </div>
     </section>
 
-    <footer>
-      <div style="display:flex;gap:12px;align-items:center">
-        <img src="logo1.png" alt="logo" style="width:46px;height:46px;border-radius:8px">
-        <div style="color:var(--muted);font-size:13px">© Artzans</div>
-      </div>
+<footer class="footer-section">
+        <div class="footer-top-graphic"></div>
+
+        <div class="neve-graphic">
+            <img src="assets/Neve.png" alt="Efeito de Neve" class="neve-icon">
+        </div>
+        
+        <div class="footer-content">
+            <div class="Redes">
+                <h3>Redes Sociais</h3>
+                <p>Siga nossas redes sociais para ficar por dentro das novidades sobre a Artzans!</p>
+            </div>
+        </div>
+        
+<div class="social-icons-wrapper">
+            <div class="social-links">
+                
+                <div class="social-block social-instagram">
+                    <img src="assets/instagram.png" alt="Instagram Icon">
+                    <p class="social-text">@artzans</p>
+                </div>
+                
+                <div class="social-block social-tiktok">
+                    <img src="assets/tiktok.png" alt="TikTok Icon">
+                    <p class="social-text">@artzans</p>
+                </div>
+
+            </div>
+        </div>
     </footer>
-
-  </main>
-
-  <div class="spray"></div>
-
 </body>
 </html>

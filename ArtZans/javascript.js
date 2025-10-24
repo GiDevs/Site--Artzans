@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
     console.error('Elemento #nextArrow não encontrado no DOM. Verifique o ID da seta no HTML.');
     return;
   }
-
+springPage.addEventListener('click', () => {
+    window.open('primavera.html', '_blank');
+  });
   let currentPage = 0;
 
   arrow.addEventListener('click', () => {

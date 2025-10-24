@@ -13,7 +13,7 @@
     --col-red-2: #e74c3c; 
     --font-title: 'Fredoka One', cursive; 
     --font-logo: 'Oi', cursive; 
-    --nav-bg: #e7ffc1ad; 
+    --nav-bg: #e7ffc144; 
     --dark-green-text: #4f5a34; 
     --dark-blue-text: #393939; 
 
@@ -23,7 +23,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    color: var(--black-text);
+    color: var(--dark-green-text);
     font-size: var(--font-size-base);
 }
 
@@ -282,7 +282,6 @@ h1, h2, h3 {
     width: 100%;
     height: 100%;
     background-color: var(--page-white);
-    padding: 10px; 
     box-sizing: border-box;
     display: flex;
     justify-content: center; 
@@ -329,40 +328,56 @@ h1, h2, h3 {
 }
 
 .hive-section {
-    background-color: var(--green-bg);
-    padding: 50px 0 80px;
-    text-align: center;
+  background-color: var(--green-bg);
+  padding: 60px 0;
+  text-align: center;
 }
 
+/* TÍTULO */
 .hive-section h2 {
-    font-size: 3em;
-    margin-bottom: 30px;
+  font-family: var(--font-title);
+  font-size: clamp(36px, 8vw, 70px);
+  color: var(--dark-green-text);
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
+/* CONTAINER GERAL — imagem do time + colmeia */
 .hive-graphics {
-    max-width: 90%;
-    margin: 0 auto;
-    height: 300px; 
-    position: relative; 
+  display: flex;
+  justify-content: space-between; /* mantém espaçamento natural entre imagem e colmeia */
+  align-items: center;
+  gap: 40px; /* distância entre foto e colmeia */
+  flex-wrap: nowrap; /* impede quebra de linha */
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
 }
 
-.hive-graphics .hive-image {
-    position: absolute; 
-    display: block; 
-    margin: 0;
-    width: 180px; 
 
-    right: 0; 
-    top: 50%; 
-    transform: translateY(-50%); 
-    z-index: 10;
+/* IMAGEM DO TIME */
+.team-image {
+  width: 60%;
+  border-radius: 20px;
 }
+
+.hive-image {
+  width: 25%;
+  min-width: 120px;
+}
+
+
+
+
+/* COLMEIA */
 
 .footer-section {
     background-color: var(--blue-main);
     padding: 50px 0 20px;
     color: var(--white-text);
-    
     background-image: url('assets/Gelo.PNG');
     background-size: cover; 
     background-repeat: no-repeat;
@@ -429,7 +444,7 @@ h1, h2, h3 {
     padding-top: 0; 
     padding-bottom: 0; 
     margin-top: 20px; 
-    background-color: var(--blue-main); 
+    background-color: transparent; 
 }
 
 .social-links {
@@ -452,12 +467,11 @@ h1, h2, h3 {
     height: 100%;
     padding: 0;
 
-    transition: background-color 0.3s ease;
 }
 
 
 .social-links .social-tiktok {
-    background-color: var(--blue-main); 
+    background-color: transparent; 
 }
 
 .social-block img {
@@ -478,3 +492,133 @@ h1, h2, h3 {
 .social-block:hover {
     filter: brightness(1.1);
 }
+
+/*🌸========================================
+      COLEÇÃO PRIMAVERA - ARTZANS
+========================================🌸*/
+
+.spring-page-body {
+  background-color: var(--green-bg);
+  overflow-x: hidden;
+  font-family: var(--font-title);
+}
+
+/* Seção principal */
+.spring-collection-section {
+  background-color: var(--green-bg);
+  padding: 120px 0 60px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Graminhas */
+.grass-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.grass-text {
+  position: absolute;
+  font-family: Arial, sans-serif;
+  font-size: 1.5em;
+  color: rgba(0, 0, 0, 0.15);
+  transform: rotate(-10deg);
+}
+.grass-1 { top: 5vh; left: 20vw; }
+.grass-2 { top: 15vh; right: 10vw; transform: rotate(5deg); }
+.grass-3 { top: 30vh; left: 5vw; }
+.grass-4 { top: 40vh; right: 40vw; transform: rotate(15deg); }
+.grass-5 { top: 55vh; left: 30vw; }
+.grass-6 { bottom: 10vh; left: 50vw; }
+.grass-7 { bottom: 5vh; right: 5vw; }
+.grass-8 { top: 60vh; left: 80vw; }
+.grass-9 { top: 75vh; right: 30vw; transform: rotate(-5deg); }
+.grass-10 { top: 20vh; left: 55vw; }
+.grass-11 { bottom: 20vh; left: 5vw; }
+
+/* Cabeçalho da coleção */
+.collection-header {
+  position: relative;
+  z-index: 5;
+  margin-bottom: 90px;
+}
+
+.collection-header h2 {
+  font-size: 2.4em;
+  color: var(--dark-green-text);
+  margin: 0 0 10px;
+}
+
+.collection-header p {
+  font-size: 1.1em;
+  color: var(--dark-green-text);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Grid da coleção */
+.collection-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  position: relative;
+  z-index: 5;
+  padding: 0 10%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.collection-item h3 {
+  font-size: 2em;
+  color: var(--black-text);
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Alinhamentos */
+.collection-item.text-left {
+  text-align: left;
+}
+.collection-item.text-right {
+  text-align: right;
+}
+.collection-item.image-left,
+.collection-item.image-right {
+  max-width: 320px;
+}
+.collection-item.image-right {
+  margin-left: auto;
+}
+
+/* Imagens */
+.collection-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  border: 4px solid var(--page-white);
+}
+
+
+
+/* Ordem dos itens (seguindo o protótipo) */
+.collection-item:nth-child(1) { grid-column: 1; grid-row: 1; } /* Boné texto */
+.collection-item:nth-child(2) { grid-column: 2; grid-row: 1; } /* Boné imagem */
+
+.collection-item:nth-child(3) { grid-column: 1; grid-row: 2; } /* Ecobag imagem */
+.collection-item:nth-child(4) { grid-column: 2; grid-row: 2; } /* Ecobag texto */
+
+.collection-item:nth-child(5) { grid-column: 1; grid-row: 3; } /* Brinco texto */
+.collection-item:nth-child(6) { grid-column: 2; grid-row: 3; } /* Brinco imagem */
+
+/* Mantém centralização das imagens */
+.collection-item.image-left,
+.collection-item.image-right {
+  justify-self: center;
+  }
+

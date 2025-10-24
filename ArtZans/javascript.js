@@ -31,3 +31,25 @@ springPage.addEventListener('click', () => {
     }
   });
 });
+
+// Coloca as seções num array
+const sections = document.querySelectorAll('.about-section, .products-section, .hive-section');
+
+// Percorre o array e adiciona o filtro e animação em cada seção
+sections.forEach(s => {
+  s.style.filter = 'blur(10px)';
+  s.style.transition = 'filter 800ms';
+  s.style.willChange = 'filter';
+});
+
+// Verifica se a section está no campo de visão
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const el = entry.target;
+    el.style.filter = entry.isIntersecting ? 'blur(0px)' : 'blur(10px)';
+  });
+}, { threshold: 0.12 });
+
+// Observa cada seção
+sections.forEach(s => observer.observe(s));
+

@@ -230,7 +230,6 @@ h1, h2, h3 {
     z-index: 1; 
 }
 
-
 .products-section {
     background-color: var(--green-bg);
     padding: 30px 0 50px;
@@ -333,7 +332,6 @@ h1, h2, h3 {
   text-align: center;
 }
 
-/* TÍTULO */
 .hive-section h2 {
   font-family: var(--font-title);
   font-size: clamp(36px, 8vw, 70px);
@@ -343,13 +341,12 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
-/* CONTAINER GERAL — imagem do time + colmeia */
 .hive-graphics {
   display: flex;
-  justify-content: space-between; /* mantém espaçamento natural entre imagem e colmeia */
+  justify-content: space-between; 
   align-items: center;
-  gap: 40px; /* distância entre foto e colmeia */
-  flex-wrap: nowrap; /* impede quebra de linha */
+  gap: 40px; 
+  flex-wrap: nowrap; 
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
@@ -357,8 +354,6 @@ h1, h2, h3 {
   z-index: 5;
 }
 
-
-/* IMAGEM DO TIME */
 .team-image {
   width: 60%;
   border-radius: 20px;
@@ -369,10 +364,6 @@ h1, h2, h3 {
   min-width: 120px;
 }
 
-
-
-
-/* COLMEIA */
 
 .footer-section {
     background-color: var(--blue-main);
@@ -493,17 +484,12 @@ h1, h2, h3 {
     filter: brightness(1.1);
 }
 
-/*🌸========================================
-      COLEÇÃO PRIMAVERA - ARTZANS
-========================================🌸*/
-
 .spring-page-body {
   background-color: var(--green-bg);
   overflow-x: hidden;
   font-family: var(--font-title);
 }
 
-/* Seção principal */
 .spring-collection-section {
   background-color: var(--green-bg);
   padding: 120px 0 60px;
@@ -596,7 +582,6 @@ h1, h2, h3 {
   margin-left: auto;
 }
 
-/* Imagens */
 .collection-item img {
   width: 100%;
   height: auto;
@@ -605,18 +590,15 @@ h1, h2, h3 {
 }
 
 
+.collection-item:nth-child(1) { grid-column: 1; grid-row: 1; } 
+.collection-item:nth-child(2) { grid-column: 2; grid-row: 1; } 
 
-/* Ordem dos itens (seguindo o protótipo) */
-.collection-item:nth-child(1) { grid-column: 1; grid-row: 1; } /* Boné texto */
-.collection-item:nth-child(2) { grid-column: 2; grid-row: 1; } /* Boné imagem */
+.collection-item:nth-child(3) { grid-column: 1; grid-row: 2; } 
+.collection-item:nth-child(4) { grid-column: 2; grid-row: 2; } 
 
-.collection-item:nth-child(3) { grid-column: 1; grid-row: 2; } /* Ecobag imagem */
-.collection-item:nth-child(4) { grid-column: 2; grid-row: 2; } /* Ecobag texto */
+.collection-item:nth-child(5) { grid-column: 1; grid-row: 3; } 
+.collection-item:nth-child(6) { grid-column: 2; grid-row: 3; } 
 
-.collection-item:nth-child(5) { grid-column: 1; grid-row: 3; } /* Brinco texto */
-.collection-item:nth-child(6) { grid-column: 2; grid-row: 3; } /* Brinco imagem */
-
-/* Mantém centralização das imagens */
 .collection-item.image-left,
 .collection-item.image-right {
   justify-self: center;
